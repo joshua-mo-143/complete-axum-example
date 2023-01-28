@@ -1,0 +1,17 @@
+[package]
+name = "complete-axum-example"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+
+[dependencies]
+shuttle-service = { version = "0.9.0", features = ["web-axum"] }
+axum = "0.6.4"
+sync_wrapper = "0.1.1"
+tokio = "1.22.0"
+sqlx = { version = "0.6.2", features = ["runtime-tokio-native-tls", "postgres"] }
+shuttle-shared-db = { version = "0.9.0", features = ["postgres", "sqlx"] }
+shuttle-secrets = "0.9.0"
+serde = { version = "1.0.152", features = ["derive"] }

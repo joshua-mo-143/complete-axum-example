@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS dogs (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    colour VARCHAR NOT NULL,
+)
